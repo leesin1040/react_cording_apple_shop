@@ -13,6 +13,7 @@ import axios from 'axios';
  */
 let Detail = lazy(() => import('./pages/Detail.js'));
 let Cart = lazy(() => import('./pages/Cart.js'));
+let About = lazy(() => import('./pages/About.js'));
 
 function App() {
   let [items, setItems] = useState(data);
@@ -152,17 +153,6 @@ function Card(props) {
         <p>{props.item.money}</p>
       </div>
     </Col>
-  );
-}
-
-function About() {
-  return (
-    <div>
-      <div>
-        하이하이
-        <Outlet />
-      </div>
-    </div>
   );
 }
 
